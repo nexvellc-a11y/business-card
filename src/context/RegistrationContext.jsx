@@ -1,12 +1,12 @@
 import React, { createContext, useContext, useState } from 'react';
 
 const defaultOpeningHours = [
-  { day: 'Monday',    open: true, from: '09:00', to: '18:00' },
-  { day: 'Tuesday',   open: true, from: '09:00', to: '18:00' },
-  { day: 'Wednesday', open: true, from: '09:00', to: '18:00' },
-  { day: 'Thursday',  open: true, from: '09:00', to: '18:00' },
-  { day: 'Friday',    open: true, from: '09:00', to: '18:00' },
-  { day: 'Saturday',  open: true, from: '09:00', to: '18:00' },
+  { day: 'Monday',    open: false, from: '09:00', to: '18:00' },
+  { day: 'Tuesday',   open: false, from: '09:00', to: '18:00' },
+  { day: 'Wednesday', open: false, from: '09:00', to: '18:00' },
+  { day: 'Thursday',  open: false, from: '09:00', to: '18:00' },
+  { day: 'Friday',    open: false, from: '09:00', to: '18:00' },
+  { day: 'Saturday',  open: false, from: '09:00', to: '18:00' },
   { day: 'Sunday',    open: false, from: '09:00', to: '18:00' },
 ];
 
@@ -35,7 +35,7 @@ const emptyState = {
   video: '',
   referralCode: '',
   selectedPlan: 'standard',
-  planPrice: '₹499/yr',
+  planPrice: '₹500/yr',
   template: 'classic',
   bannerImage: null,       // File object or preview URL
   galleryImages: [],       // Array of File objects or preview URLs
